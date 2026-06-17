@@ -1,0 +1,54 @@
+{
+  "name": "myprodaya",
+  "version": "0.0.1",
+  "description": "Aplikasi Manajemen Penyaluran BMH",
+  "productName": "myprodaya",
+  "author": "aca2merejane <ac.mumtaz@gmail.com>",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint -c ./eslint.config.js \"./src*/**/*.{js,cjs,mjs,vue}\"",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev:frontend": "quasar dev",
+    "server": "node server/server.js",
+    "dev": "concurrently -n \"API,APP\" -c \"magenta,cyan\" \"npm run server\" \"npm run dev:frontend\"",
+    "build": "quasar build",
+    "postinstall": "quasar prepare"
+  },
+  "dependencies": {
+    "@edgeone/pages-blob": "^0.0.12",
+    "@quasar/extras": "^1.16.4",
+    "axios": "^1.17.0",
+    "cors": "^2.8.6",
+    "cos-nodejs-sdk-v5": "^2.15.4",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "google-auth-library": "^10.7.0",
+    "jsonwebtoken": "^9.0.3",
+    "leaflet": "^1.9.4",
+    "multer": "^2.1.1",
+    "mysql2": "^3.22.4",
+    "pinia": "^3.0.4",
+    "quasar": "^2.16.0",
+    "vue": "^3.5.22",
+    "vue-router": "^5.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@quasar/app-vite": "^2.5.1",
+    "autoprefixer": "^10.4.27",
+    "concurrently": "^10.0.3",
+    "eslint": "^9.39.4",
+    "eslint-plugin-vue": "^10.8.0",
+    "globals": "^17.4.0",
+    "postcss": "^8.5.8",
+    "vite-plugin-checker": "^0.12.0",
+    "vue-eslint-parser": "^10.4.0"
+  },
+  "engines": {
+    "node": "^28 || ^26 || ^24 || ^22.12",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1",
+    "pnpm": ">= 10.0.0"
+  }
+}

@@ -1,0 +1,222 @@
+// app global css
+
+/* ==========================================================================
+   GLOBAL LIGHT & DARK THEME OVERRIDES FOR MY PRODAYA
+   ========================================================================== */
+
+/* --- Light Mode Defaults (fallback) --- */
+.body--light {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+/* --- Dark Mode Overrides --- */
+.body--dark {
+  background-color: #0b0f19;
+  color: #f8fafc;
+
+  /* Card and Panel Backgrounds */
+  .bg-white {
+    background-color: #1e293b !important; /* slate-800 */
+    color: #f8fafc !important;
+  }
+
+  .border-card, 
+  .metric-card, 
+  .chart-card, 
+  .map-card, 
+  .program-card {
+    background-color: #1e293b !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25) !important;
+  }
+
+  /* Text Overrides */
+  .text-dark {
+    color: #f8fafc !important;
+  }
+
+  .text-grey-7, 
+  .text-grey-8, 
+  .text-grey-9 {
+    color: #94a3b8 !important; /* slate-400 */
+  }
+
+  .text-grey-1, 
+  .text-grey-2, 
+  .text-grey-3, 
+  .text-grey-4 {
+    color: #cbd5e1 !important; /* slate-300 */
+  }
+
+  /* Color Palette Adjustments for High-Contrast in Dark Mode */
+  .text-primary { color: #64b5f6 !important; }
+  .text-secondary { color: #4db6ac !important; }
+  .text-accent { color: #ba68c8 !important; }
+  
+  .text-blue-9 { color: #90caf9 !important; }
+  .text-indigo-9 { color: #9fa8da !important; }
+  .text-teal-9 { color: #80cbc4 !important; }
+  .text-amber-9 { color: #ffe082 !important; }
+  .text-orange-9 { color: #ffa726 !important; }
+  .text-red-9 { color: #ef9a9a !important; }
+  .text-green-9 { color: #81c784 !important; }
+
+  /* Avatar & Chip Soft Backgrounds in Dark Mode */
+  .bg-blue-1 { background-color: rgba(33, 150, 243, 0.15) !important; color: #90caf9 !important; }
+  .bg-orange-1 { background-color: rgba(255, 152, 0, 0.15) !important; color: #ffb74d !important; }
+  .bg-red-1 { background-color: rgba(244, 67, 54, 0.15) !important; color: #ef9a9a !important; }
+  .bg-teal-1 { background-color: rgba(0, 150, 136, 0.15) !important; color: #80cbc4 !important; }
+  .bg-amber-1 { background-color: rgba(255, 193, 7, 0.15) !important; color: #ffe082 !important; }
+  .bg-indigo-1 { background-color: rgba(63, 81, 181, 0.15) !important; color: #9fa8da !important; }
+  .bg-green-1 { background-color: rgba(76, 175, 80, 0.15) !important; color: #81c784 !important; }
+  .bg-purple-1 { background-color: rgba(156, 39, 176, 0.15) !important; color: #ce93d8 !important; }
+
+  .q-avatar {
+    &.bg-blue-1 { color: #90caf9 !important; }
+    &.bg-orange-1 { color: #ffb74d !important; }
+    &.bg-red-1 { color: #ef9a9a !important; }
+    &.bg-teal-1 { color: #80cbc4 !important; }
+    &.bg-amber-1 { color: #ffe082 !important; }
+    &.bg-indigo-1 { color: #9fa8da !important; }
+    &.bg-green-1 { color: #81c784 !important; }
+    &.bg-purple-1 { color: #ce93d8 !important; }
+  }
+
+  /* Form Elements, Inputs, Select Fields */
+  .q-field--outlined {
+    .q-field__control {
+      background-color: rgba(30, 41, 59, 0.6) !important;
+      color: #f8fafc !important;
+      
+      &:before {
+        border-color: rgba(255, 255, 255, 0.12) !important;
+      }
+      &:hover:before {
+        border-color: rgba(255, 255, 255, 0.25) !important;
+      }
+    }
+  }
+
+  .q-field__native, 
+  .q-field__prefix, 
+  .q-field__suffix, 
+  .q-field__input {
+    color: #f8fafc !important;
+  }
+
+  .q-field__label {
+    color: #94a3b8 !important;
+  }
+
+  .q-field__prepend .q-icon, 
+  .q-field__append .q-icon {
+    color: #cbd5e1 !important;
+  }
+
+  /* Dropdown/Select Popup Options & Overlay Menus */
+  .q-menu, 
+  .q-menu .q-list {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .q-item {
+    color: #cbd5e1;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05) !important;
+      color: #f8fafc !important;
+    }
+  }
+
+  /* Tables */
+  .q-table__container {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .q-table {
+    color: #f8fafc !important;
+
+    thead tr th {
+      color: #94a3b8 !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+    }
+
+    tbody tr td {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+    }
+    
+    tbody tr:hover td {
+      background-color: rgba(255, 255, 255, 0.03) !important;
+    }
+  }
+  
+  .q-table__bottom,
+  .q-table__control {
+    color: #cbd5e1 !important;
+  }
+
+  /* Dialogs */
+  .q-dialog__inner .q-card {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  /* Leaflet Map Dark Mode Styling */
+  .leaflet-container {
+    background-color: #0b0f19 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .leaflet-popup-content-wrapper, 
+  .leaflet-popup-tip {
+    background: #1e293b !important;
+    color: #f8fafc !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .map-popup-card {
+    color: #f8fafc !important;
+    
+    .popup-title {
+      color: #64b5f6 !important;
+    }
+    .popup-amount {
+      color: #81c784 !important;
+    }
+    .popup-info {
+      color: #cbd5e1 !important;
+    }
+  }
+
+  /* Tabs */
+  .q-tabs {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+  
+  .q-tab--inactive {
+    color: #94a3b8 !important;
+  }
+
+  /* Scrollbars for Dark Mode */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+    &:hover {
+      background: #475569;
+    }
+  }
+}
